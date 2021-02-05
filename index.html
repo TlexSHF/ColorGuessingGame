@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Color2Game</title>
+        <meta charset="utf-8"/>
+        <link href="Arbeidskrav.V2.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="container">
+            <h1>Epic Color Guessing game!</h1>
+            <p>If you arent color blind, this might not be that hard of a task... but you can try anyways.<br>
+                Which box matches the top, big one?</p>
+            <div id="big-box" class="box"></div>
+            <div id="smoll1" class="box"></div>
+            <div id="smoll2" class="box"></div>
+            <div id="smoll3" class="box"></div>
+            <div id="score-box">Score:<br>0</div>
+            <div id="streak-box"></div>
+            <input id="exit-btn" type="button" value="Save Score & EXIT"/>
+            <div id="exit-message">
+                <br><br>
+                <div id="result-here"></div>
+                <input id="ok-btn" type="button" value="OK"/>
+            </div>
+
+            <div id="menu">
+                <h1>SCOREBOARD<br></h1>
+                <input id="start-btn" type="button" value="Start Game!" class="button"/>
+                <input id="rule-btn" type="button" value="Rules!" class="button"/>
+                <div id=score-list></div>
+            </div>
+
+            <div id="difficulty-chooser" class="layered-box">
+                <h1><br>Choose Difficulty</h1>
+                <input id="easy-btn" type="button" value="EASY" class="button"/>
+                <input id="medium-btn" type="button" value="MEDIUM" class="button"/>
+                <input id="hard-btn" type="button" value="HARD" class="button"/>
+                <input id="back-btn-1" type="button" value="Back" class="button"/>
+            </div>
+
+            <div id="info-box" class="layered-box">
+                <h1><br>Rules:</h1>
+                <p> <br>Hello and Welcome to the Color Game!
+                    <br>Upon starting the game, you will be given three difficulties.
+                    <br>Each difficulty gives a different set of points awarded for each correct answer.
+                    <br>When the difficulty is chosen, you will be provided with a big box,
+                    <br>and three smaller boxes colored in various colors.
+                    <br>The big box' color will be the main color.
+                    <br>Your goal is to click the small box with the corresponding color.
+                    <br>Each correct answer will give you some points based on your difficulty.
+                    <br>When you get multiple right answers in a row, you will get a streak.
+                    <br>The higher the streak is, the more points you will get from each correct answer.
+                    <br>The game will tell you if you chose correctly.
+                    <br>You can exit the game at any time.
+                    <br>Remember to write your name in the end to get your score on the scoreboard!
+                    <br>(Or you can go anonym. Your choice!)
+                </p>
+                <input id="back-btn-2" type="button" value="Back" class="button"/>
+                
+            </div>
+        </div>
+
+        <script src="Arbeidskrav.V2.js"></script>
+    </body>
+</html>
